@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedLoop.ai - Professional Patient Posts in Under 2 Minutes</title>
+    <meta name="description" content="Create professional patient posts in under 2 minutes. 3,600 ready-made phrases, 6 languages, automated scheduling. Lock in founder's pricing before Feb 1, 2026.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a1f3d 0%, #0d2847 50%, #0a1f3d 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: rgba(10, 31, 61, 0.95);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid rgba(26, 188, 156, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, #1abc9c, #16a085);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #1abc9c;
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26, 188, 156, 0.4);
+        }
+
+        /* SECTIONS */
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .section-alt {
+            background: rgba(13, 40, 71, 0.5);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #1abc9c, #16a085, #1abc9c);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1abc9c;
+        }
+
+        p {
+            font-size: 1.125rem;
+            margin-bottom: 15px;
+            color: #e0e0e0;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 120px 20px 80px;
+        }
+
+        .hero h1 {
+            max-width: 900px;
+            margin: 0 auto 20px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #b8b8b8;
+        }
+
+        .founder-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            padding: 18px 40px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.125rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color: white;
+            box-shadow: 0 4px 15px rgba(26, 188, 156, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(26, 188, 156, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #1abc9c;
+            border: 2px solid #1abc9c;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(26, 188, 156, 0.1);
+        }
+
+        .trust-line {
+            margin-top: 20px;
+            font-size: 0.95rem;
+            color: #888;
+        }
+
+        /* 3 COLUMN LAYOUT */
+        .three-col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .col-box {
+            background: rgba(26, 26, 26, 0.6);
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid rgba(26, 188, 156, 0.2);
+        }
+
+        .col-box h3 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .col-box ul {
+            list-style: none;
+        }
+
+        .col-box li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .col-box li:last-child {
+            border-bottom: none;
+            font-weight: 700;
+            color: #1abc9c;
+            margin-top: 15px;
+        }
+
+        /* VALUE TABLE */
+        .value-table {
+            background: rgba(26, 26, 26, 0.6);
+            border-radius: 12px;
+            padding: 40px;
+            margin-top: 40px;
+            border: 2px solid rgba(26, 188, 156, 0.3);
+        }
+
+        .value-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .value-table td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .value-table td:first-child {
+            color: #e0e0e0;
+        }
+
+        .value-table td:last-child {
+            text-align: right;
+            color: #1abc9c;
+            font-weight: 700;
+        }
+
+        .value-total {
+            font-size: 1.5rem;
+            color: #1abc9c !important;
+            padding-top: 20px !important;
+            border-top: 3px solid #1abc9c !important;
+        }
+
+        .value-savings {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.5rem;
+            color: #1abc9c;
+            font-weight: 800;
+        }
+
+        /* FEATURES GRID */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-box {
+            background: rgba(26, 26, 26, 0.6);
+            padding: 35px;
+            border-radius: 12px;
+            border: 2px solid rgba(26, 188, 156, 0.2);
+            transition: all 0.3s;
+        }
+
+        .feature-box:hover {
+            border-color: #1abc9c;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(26, 188, 156, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        /* HOW IT WORKS */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .step {
+            text-align: center;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+        }
+
+        .step-image {
+            background: rgba(26, 26, 26, 0.6);
+            border: 2px solid rgba(26, 188, 156, 0.3);
+            border-radius: 12px;
+            height: 250px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+        }
+
+        /* COMPARISON TABLE */
+        .comparison-table {
+            background: rgba(26, 26, 26, 0.6);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 50px;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th {
+            background: rgba(26, 188, 156, 0.2);
+            padding: 20px;
+            color: #1abc9c;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .comparison-table td {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .check {
+            color: #1abc9c;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .cross {
+            color: #ef4444;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        /* PRICING */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .pricing-card {
+            background: rgba(26, 26, 26, 0.6);
+            border: 3px solid rgba(26, 188, 156, 0.3);
+            border-radius: 12px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border-color: #1abc9c;
+            box-shadow: 0 0 40px rgba(26, 188, 156, 0.4);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            right: 30px;
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #1abc9c;
+            margin-bottom: 15px;
+        }
+
+        .plan-desc {
+            color: #888;
+            margin-bottom: 25px;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .price-period {
+            color: #888;
+            font-size: 1rem;
+        }
+
+        .founder-price {
+            background: rgba(26, 188, 156, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid rgba(26, 188, 156, 0.3);
+        }
+
+        .founder-price p {
+            margin: 5px 0;
+            font-size: 0.95rem;
+        }
+
+        .regular-price {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .savings {
+            color: #1abc9c;
+            font-weight: 700;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .features-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .features-list li:before {
+            content: "✓ ";
+            color: #1abc9c;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        .features-list li.disabled {
+            color: #666;
+        }
+
+        .features-list li.disabled:before {
+            content: "✗ ";
+            color: #ef4444;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+
+        .faq-item {
+            background: rgba(26, 26, 26, 0.6);
+            border: 2px solid rgba(26, 188, 156, 0.2);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            color: #1abc9c;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: rgba(26, 188, 156, 0.1);
+        }
+
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 25px 25px;
+            max-height: 500px;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        /* FOOTER */
+        footer {
+            background: rgba(10, 31, 61, 0.95);
+            padding: 60px 20px 30px;
+            border-top: 2px solid rgba(26, 188, 156, 0.3);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #1abc9c;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col a {
+            color: #e0e0e0;
+            text-decoration: none;
+            display: block;
+            padding: 8px 0;
+            transition: color 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: #1abc9c;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #888;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            
+            .three-col,
+            .features-grid,
+            .steps,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .cta-group {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .comparison-table {
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="container">
+        <div class="logo">MedLoop.ai</div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <a href="#pricing" class="nav-cta">Start Free Trial</a>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="founder-badge">🚀 FOUNDER'S PRICING - Lock in $29/month before Feb 1, 2026</div>
+    
+    <h1>Never Forget a Patient Birthday Again—<br>Create Professional Posts in Under 2 Minutes</h1>
+    
+    <p>MedLoop helps healthcare professionals maintain meaningful patient relationships with ready-made phrases, professional images, and automated scheduling. In 6 languages.</p>
+    
+    <div class="cta-group">
+        <a href="#pricing" class="btn btn-primary">Start 7-Day Free Trial</a>
+        <a href="#how-it-works" class="btn btn-secondary">Watch 2-Minute Demo</a>
+    </div>
+    
+    <p class="trust-line">No credit card required • 7-day free trial • Cancel anytime</p>
+</section>
+
+<!-- PROBLEM/SOLUTION -->
+<section>
+    <h2>Stop Wasting Hours on Patient Communication</h2>
+    
+    <div class="three-col">
+        <div class="col-box">
+            <h3>😰 Without MedLoop</h3>
+            <ul>
+                <li>15 minutes per post<br><small style="color:#888">Staring at blank canvas in Canva</small></li>
+                <li>Writer's block<br><small style="color:#888">"What should I write this time?"</small></li>
+                <li>Forgetting important dates<br><small style="color:#888">Birthdays, appointments, follow-ups</small></li>
+                <li>Manual tracking<br><small style="color:#888">Spreadsheets, sticky notes, chaos</small></li>
+                <li><strong>4+ hours per month wasted</strong></li>
+            </ul>
+        </div>
+        
+        <div class="col-box">
+            <h3>✨ With MedLoop</h3>
+            <ul>
+                <li>2 minutes per post<br><small style="color:#888">3,600 ready-made professional phrases</small></li>
+                <li>Zero writer's block<br><small style="color:#888">Choose from 20 communication categories</small></li>
+                <li>Never forget dates<br><small style="color:#888">Automated scheduling + reminders</small></li>
+                <li>Everything organized<br><small style="color:#888">Dashboard shows all scheduled messages</small></li>
+                <li><strong>13 minutes saved per post</strong></li>
+            </ul>
+        </div>
+        
+        <div class="col-box">
+            <h3>💚 Your New Reality</h3>
+            <ul>
+                <li>4+ hours saved monthly<br><small style="color:#888">Time for what matters: patients</small></li>
+                <li>Consistent communication<br><small style="color:#888">Never miss a birthday again</small></li>
+                <li>Professional appearance<br><small style="color:#888">Every post looks polished</small></li>
+                <li>International reach<br><small style="color:#888">6 languages, one platform</small></li>
+                <li><strong>Better relationships, less stress</strong></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- VALUE COMPARISON -->
+<section class="section-alt">
+    <h2>💰 MedLoop Replaces 5 Expensive Services</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">See what you'd pay separately vs. what you pay with MedLoop:</p>
+    
+    <div class="value-table">
+        <table>
+            <tr>
+                <td>Professional Copywriter<br><small style="color:#888">(3,600 phrases × $0.15 per phrase)</small></td>
+                <td>$500/year</td>
+            </tr>
+            <tr>
+                <td>Market Research (20 categories)<br><small style="color:#888">(Understanding patient needs)</small></td>
+                <td>$300/year</td>
+            </tr>
+            <tr>
+                <td>Scheduling Software (Hootsuite)<br><small style="color:#888">($99/month)</small></td>
+                <td>$1,188/year</td>
+            </tr>
+            <tr>
+                <td>Translation Services (6 languages)<br><small style="color:#888">(Professional medical translation)</small></td>
+                <td>$600/year</td>
+            </tr>
+            <tr>
+                <td>Graphic Designer<br><small style="color:#888">(Logo positioning, visual editing)</small></td>
+                <td>$200/year</td>
+            </tr>
+            <tr>
+                <td class="value-total">TOTAL IF PURCHASED SEPARATELY:</td>
+                <td class="value-total">$2,788/year</td>
+            </tr>
+        </table>
+        
+        <div class="value-savings">
+            MedLoop: $348/year (Basic) or $588/year (Premium)<br>
+            <span style="color:#1abc9c; font-size:2rem;">YOU SAVE: Up to $2,440/year (87% savings)</span>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+    <h2>Everything You Need to Maintain Professional Patient Communication</h2>
+    
+    <div class="features-grid">
+        <div class="feature-box">
+            <div class="feature-icon">⚡</div>
+            <h3>Save 13 Minutes Per Post</h3>
+            <p>Create professional posts in under 2 minutes. No more staring at blank screens or hiring designers. Average user saves 4+ hours per month.</p>
+        </div>
+        
+        <div class="feature-box">
+            <div class="feature-icon">📝</div>
+            <h3>3,600 Ready-Made Phrases</h3>
+            <p>Never write from scratch again. Professional phrases for 20 communication categories—birthdays, appointments, health tips, seasonal greetings, and more.</p>
+        </div>
+        
+        <div class="feature-box">
+            <div class="feature-icon">🌍</div>
+            <h3>Reach International Patients</h3>
+            <p>All phrases available in 6 languages: English, Spanish, Portuguese, French, German, and Italian. Switch languages with one click.</p>
+        </div>
+        
+        <div class="feature-box">
+            <div class="feature-icon">📅</div>
+            <h3>Never Forget Important Dates</h3>
+            <p>Schedule individual messages or bulk-schedule for 100+ patients. Automatic reminders ensure you never miss a birthday, appointment, or follow-up.</p>
+        </div>
+        
+        <div class="feature-box">
+            <div class="feature-icon">🎨</div>
+            <h3>Professional Customization</h3>
+            <p>Upload your logo, choose from 18 colors, adjust fonts and sizes. Every post reflects your brand. No design skills required.</p>
+        </div>
+        
+        <div class="feature-box">
+            <div class="feature-icon">🔒</div>
+            <h3>Privacy-First Design</h3>
+            <p>All editing happens in your browser. Your images and patient information never touch our servers. HIPAA-compliant workflow.</p>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works" class="section-alt">
+    <h2>Create Professional Posts in 3 Simple Steps</h2>
+    
+    <div class="steps">
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>Choose Your Message Type</h3>
+            <div class="step-image">[Screenshot: Category selector]</div>
+            <p>Select from 20 communication categories: Birthdays, Appointment Reminders, Health Tips, Seasonal Greetings, and 16 more. Pick your language and see 30 professional phrases for that category.</p>
+        </div>
+        
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>Customize Your Post</h3>
+            <div class="step-image">[Screenshot: Editor with customization]</div>
+            <p>Click any phrase to add it to your post. Choose or upload a background image. Select text color from 18 options. Add your logo (drag to position). Adjust fonts, sizes, styles. Preview updates in real-time.</p>
+        </div>
+        
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>Download or Schedule</h3>
+            <div class="step-image">[Screenshot: Download/Schedule options]</div>
+            <p><strong>Basic Plan:</strong> Download high-quality image. Send via WhatsApp, email, or social media.<br><br><strong>Premium Plan:</strong> Schedule for specific patient + date. Bulk schedule for 100+ patients. Never forget important dates.</p>
+        </div>
+    </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section>
+    <h2>MedLoop vs. Manual Creation vs. Canva</h2>
+    
+    <div class="comparison-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>FEATURE</th>
+                    <th style="text-align:center">Manual</th>
+                    <th style="text-align:center">Canva Pro</th>
+                    <th style="text-align:center">MedLoop</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Time per post</td>
+                    <td style="text-align:center">15 min</td>
+                    <td style="text-align:center">10 min</td>
+                    <td style="text-align:center; color:#1abc9c; font-weight:700">2 min</td>
+                </tr>
+                <tr>
+                    <td>Ready-made medical phrases</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="check">✓ 3,600</td>
+                </tr>
+                <tr>
+                    <td>Multi-language support</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="check">✓ 6 languages</td>
+                </tr>
+                <tr>
+                    <td>Scheduling & reminders</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="check">✓ Premium</td>
+                </tr>
+                <tr>
+                    <td>Logo positioning</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="check">✓</td>
+                    <td style="text-align:center" class="check">✓</td>
+                </tr>
+                <tr>
+                    <td>Medical-specific content</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="check">✓</td>
+                </tr>
+                <tr>
+                    <td>Bulk scheduling (100+)</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="check">✓ Premium</td>
+                </tr>
+                <tr>
+                    <td>No learning curve</td>
+                    <td style="text-align:center" class="check">✓</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="check">✓</td>
+                </tr>
+                <tr>
+                    <td>Privacy (offline editing)</td>
+                    <td style="text-align:center" class="check">✓</td>
+                    <td style="text-align:center" class="cross">✗</td>
+                    <td style="text-align:center" class="check">✓</td>
+                </tr>
+                <tr style="font-weight:700">
+                    <td>Annual cost</td>
+                    <td style="text-align:center">Free</td>
+                    <td style="text-align:center">$155</td>
+                    <td style="text-align:center; color:#1abc9c">$348-588</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <p style="text-align:center; margin-top:30px; max-width:800px; margin-left:auto; margin-right:auto;">
+        <strong>Summary:</strong> Manual = Free but wastes 4+ hours/month • Canva = Generic, not medical-specific, still time-consuming • MedLoop = Purpose-built for healthcare, 87% faster
+    </p>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section-alt">
+    <div style="text-align:center; margin-bottom:50px;">
+        <div class="founder-badge">⚡ FOUNDER'S PRICING ENDS FEBRUARY 1, 2026</div>
+        <p style="font-size:1.125rem; margin-top:15px;">Lock in your rate today and pay this price forever</p>
+    </div>
+    
+    <h2>Choose Your Package</h2>
+    
+    <div class="pricing-grid">
+        <!-- BASIC PLAN -->
+        <div class="pricing-card">
+            <div class="plan-name">BASIC</div>
+            <div class="plan-desc">Perfect for solo practitioners</div>
+            
+            <div class="price">$29<span class="price-period">/month</span></div>
+            
+            <div class="founder-price">
+                <p class="regular-price">Regular price: $49/month</p>
+                <p>Annual billing: $348/year</p>
+                <p class="savings">YOU SAVE $120/year</p>
+            </div>
+            
+            <ul class="features-list">
+                <li><strong>EVERYTHING TO CREATE POSTS:</strong></li>
+                <li>3,600 professional phrases</li>
+                <li>20 communication categories</li>
+                <li>6 languages (EN, ES, PT, FR, DE, IT)</li>
+                <li>Unlimited custom image uploads</li>
+                <li>Professional editor (18 colors, 10 fonts)</li>
+                <li>Logo upload & positioning</li>
+                <li>Unlimited downloads</li>
+                <li>Privacy-first (offline editing)</li>
+                <li>Commercial license included</li>
+                <li class="disabled">Individual scheduling</li>
+                <li class="disabled">Bulk scheduling (100+ patients)</li>
+                <li class="disabled">Dashboard & reminders</li>
+            </ul>
+            
+            <a href="#" class="btn btn-primary" style="width:100%; text-align:center; margin-top:20px;">Start 7-Day Free Trial</a>
+            
+            <p style="text-align:center; margin-top:15px; font-size:0.9rem; color:#888;">After trial, billed annually at $348/year.<br>Rate locked forever for early adopters.</p>
+        </div>
+        
+        <!-- PREMIUM PLAN -->
+        <div class="pricing-card featured">
+            <div class="popular-badge">⭐ MOST POPULAR</div>
+            
+            <div class="plan-name">PREMIUM</div>
+            <div class="plan-desc">Best for busy clinics</div>
+            
+            <div class="price">$49<span class="price-period">/month</span></div>
+            
+            <div class="founder-price">
+                <p class="regular-price">Regular price: $69/month</p>
+                <p>Annual billing: $588/year</p>
+                <p class="savings">YOU SAVE $240/year</p>
+            </div>
+            
+            <ul class="features-list">
+                <li><strong>EVERYTHING IN BASIC, PLUS:</strong></li>
+                <li><strong>🚀 SCHEDULING & ORGANIZATION:</strong></li>
+                <li>Quick Schedule (Individual)</li>
+                <li>Schedule for specific patient + date</li>
+                <li>Automatic reminders</li>
+                <li>Bulk Schedule (Multiple patients)</li>
+                <li>Upload list of 100+ patients</li>
+                <li>Schedule campaigns in minutes</li>
+                <li>Organization Dashboard</li>
+                <li>See all scheduled messages by date</li>
+                <li>Daily notification banner</li>
+                <li>Never forget important dates</li>
+                <li>Priority support</li>
+            </ul>
+            
+            <a href="#" class="btn btn-primary" style="width:100%; text-align:center; margin-top:20px;">Start 7-Day Free Trial</a>
+            
+            <p style="text-align:center; margin-top:15px; font-size:0.9rem; color:#888;">After trial, billed annually at $588/year.<br>Rate locked forever for early adopters.</p>
+        </div>
+    </div>
+    
+    <p style="text-align:center; margin-top:50px; font-size:1.125rem;">
+        ✓ 7-day free trial (no credit card required)<br>
+        ✓ 7-day money-back guarantee<br>
+        ✓ Cancel anytime<br>
+        ✓ Founder's rate locked forever (join before Feb 1, 2026)
+    </p>
+</section>
+
+<!-- FAQ -->
+<section>
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="faq-list">
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>How does the 7-day free trial work?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Start your trial with just your email—no credit card required. Access all features for 7 days. If you love it, choose your plan and subscribe. If not, your trial simply ends with no charge.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What's "founder's pricing" and how long does it last?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Founder's pricing is our early adopter discount. Join before February 1, 2026, and lock in $29/$49 per month forever. After that date, new members pay $49/$69 per month. Early adopters keep the lower rate for life.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Can I cancel anytime?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes. Cancel anytime from your account dashboard. No questions asked. If you cancel within 7 days, you get a full refund.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Do I need design experience?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Not at all. MedLoop is designed for healthcare professionals, not designers. Pick a phrase, choose an image, customize colors—done in 2 minutes. No learning curve.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Is my patient information secure?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Absolutely. MedLoop works entirely in your browser. Images and text you add never leave your device. We never see or store your patient information. HIPAA-compliant workflow.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Can I upload my own images?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes! Both plans include unlimited custom image uploads. Use your own photos, clinic images, or purchased stock photos. Full control.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What's the difference between Basic and Premium?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p><strong>Basic:</strong> Create and download unlimited posts. Perfect if you send manually via WhatsApp or email.<br><br><strong>Premium:</strong> Everything in Basic PLUS scheduling features—individual patient scheduling, bulk scheduling for 100+ patients, and an organization dashboard so you never forget important dates.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Do you offer refunds?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes. If you're not satisfied within the first 7 days, email support@medloop.ai for a full refund. No questions asked.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section-alt" style="text-align:center;">
+    <h2>Join Healthcare Professionals Who Never Miss a Patient Milestone</h2>
+    
+    <p style="font-size:1.25rem; max-width:700px; margin:0 auto 30px;">Lock in founder's pricing before February 1, 2026. Create professional posts in under 2 minutes. Never forget an important date again.</p>
+    
+    <div class="founder-badge" style="margin-bottom:30px;">⚡ FOUNDER'S RATE ENDS FEBRUARY 1, 2026</div>
+    
+    <p style="margin-bottom:40px;">Early adopters lock in $29/$49 per month forever.<br>New members after this date pay $49/$69 per month.</p>
+    
+    <a href="#pricing" class="btn btn-primary" style="font-size:1.25rem; padding:20px 50px;">Start 7-Day Free Trial</a>
+    
+    <p class="trust-line" style="margin-top:20px;">No credit card required • 7-day money-back guarantee • Cancel anytime</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h4>MEDLOOP.AI</h4>
+            <p>Professional patient communication in minutes</p>
+        </div>
+        
+        <div class="footer-col">
+            <h4>PRODUCT</h4>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h4>COMPANY</h4>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="mailto:support@medloop.ai">Contact</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h4>LEGAL</h4>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>support@medloop.ai</p>
+        <p style="margin-top:10px;">© 2025 MedLoop.ai. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- FAQ ACCORDION SCRIPT -->
+<script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            const wasActive = item.classList.contains('active');
+            
+            // Close all FAQs
+            document.querySelectorAll('.faq-item').forEach(faq => {
+                faq.classList.remove('active');
+            });
+            
+            // Open clicked FAQ if it wasn't active
+            if (!wasActive) {
+                item.classList.add('active');
+            }
+        });
+    });
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
